@@ -467,7 +467,7 @@ Status: Stable
    cinder-manage db sync
 
 * Finally, don't forget to create a volumegroup and name it cinder-volumes::
-
+* If you have allocate disk for cinder, you do not need to do the following
    dd if=/dev/zero of=cinder-volumes bs=1 count=0 seek=2G
    losetup /dev/loop2 cinder-volumes
    fdisk /dev/loop2
